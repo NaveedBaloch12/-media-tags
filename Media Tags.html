@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meadia tags</title>
+    <style>
+        .box{
+            color: white;
+            border: 2px solid purple;
+            display: none;
+            font-size: 45px;
+            text-align: center;
+        }
+
+        @media(max-width: 390px){
+            #box-1{
+                display: block;
+                background-color: red;
+            }
+        }
+
+        @media(min-width: 390px)and (max-width: 1280px){
+            #box-2{
+                display: block;
+                background-color: gray;
+            }
+        }
+
+        @media(min-width: 1280px)and (max-width: 2000px){
+            #box-3{
+                display: block;
+                background-color: orange;
+            }
+        }
+
+        @media(min-width: 2000px){
+            #box-4{
+                display: block;
+                background-color: yellow;
+                color: black;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">I am iPhone</div>
+    <div class="box" id="box-2">I am Tablet</div>
+    <div class="box" id="box-3">I am desktop PC</div>
+    <div class="box" id="box-4">I am Wideseceen PC</div>
+</body>
+</html>
